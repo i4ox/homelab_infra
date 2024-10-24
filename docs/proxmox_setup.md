@@ -1,3 +1,4 @@
+<!--markdownlint-disable MD013-->
 # Настройка Proxmox VE после установки
 
 ## Настройка SSH
@@ -33,3 +34,9 @@ su - root
 # Answer all `yes`
 bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
 ```
+
+## Загрузка NixOS ISO в хранилище `local` Proxmox
+
+Для того чтобы мы в конфигурациях могли использовать образ NixOS его надо установить.
+
+Переходите в `Datacenter`->`Host`->`local`->`ISO Images`->`Upload` or `Download from URL`.
